@@ -45,9 +45,9 @@ const CONFIG = {
       },
       {
         id: '3',
-        name: 'Todoist',
-        icon: 'trello',
-        link: 'https://todoist.com',
+        name: 'Youtube',
+        icon: 'youtube',
+        link: 'https://youtube.com',
       },
       {
         id: '4',
@@ -63,9 +63,9 @@ const CONFIG = {
       },
       {
         id: '6',
-        name: 'Odysee',
-        icon: 'youtube',
-        link: 'https://odysee.com/',
+        name: 'News',
+        icon: 'trello',
+        link: 'https://publico.es/',
       },
     ],
   
