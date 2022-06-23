@@ -81,20 +81,16 @@ const CONFIG = {
     lists: {
       firstList: [
         {
-          name: 'Inspirational',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Outlook',
+          link: 'https://www.outlook.com/',
         },
         {
-          name: 'Classic',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Overleaf',
+          link: 'https://www.overleaf.com/project',
         },
         {
-          name: 'Oldies',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
-        {
-          name: 'Rock',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'CampusVirtual',
+          link: 'https://campusvirtual.udc.gal/',
         },
       ],
       secondList: [
