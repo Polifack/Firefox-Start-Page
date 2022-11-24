@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Welcome!</title>
+    <title>Hello world!</title>
     <link
       rel=" shortcut icon"
       type="image/png"
@@ -10,15 +10,19 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
 
   <body class="">
-    <button id="themeButton">
-      <i id="themeIcon" icon-name="moon"></i>
-    </button>
     <div class="container">
       <!-- Clock and Greetings  -->
+
+      <div class="picBlock">
+        <!-- Display image from assets-->
+        <img class ="picture" src="assets/pic.png" alt="random" />
+        
+      </div>
 
       <div class="timeBlock">
         <div class="clock">
@@ -38,7 +42,7 @@
         </div>
         <div class="weather">
           <div class="weatherIcon">
-            <img src="assets/icons/OneDark/unknown.png" />
+            <img src="assets/icons/weather/unknown.png" />
           </div>
           <div class="weatherValue">
             <p class="">- °<span class="g">c</span></p>
@@ -49,39 +53,22 @@
         </div>
       </div>
 
-      <!-- 
-        ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
-        ├┴┐│ │ │  │ │ ││││└─┐
-        └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘ 
-        -->
-
-      <div class="buttons" id="buttonsContainer"></div>
-
-      <!-- 
-        ┬  ┬┌─┐┌┬┐┌─┐
-        │  │└─┐ │ └─┐
-        ┴─┘┴└─┘ ┴ └─┘
-        -->
 
       <div class="card list list__1" id="list_1"></div>
-
       <div class="card list list__2" id="list_2"></div>
-    </div>
+      <div class="card list list__3" id="list_3"></div>
+      <div class="card list list__4" id="list_4"></div>
 
     <!-- Config  -->
     <script src="settings.js"></script>
 
-    <!-- Scripts  -->
+    <!-- Scripts <script src="assets/js/weather.js"></script>  -->
     <script src="assets/js/time.js"></script>
-    <script src="assets/js/theme.js"></script>
     <script src="assets/js/greeting.js"></script>
-    <script src="assets/js/weather.js"></script>
-
-    <script src="assets/js/cards.js"></script>
     <script src="assets/js/lists.js"></script>
     <script>
       lucide.createIcons();
     </script>
-    <a rel="me" href="https://mastodon.social/@poli">Mastodon</a>
+    </div>
   </body>
 </html>
