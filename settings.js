@@ -48,7 +48,7 @@ const CONFIG = {
       secondList: [
         {
           name: 'Twitter',
-          link: 'https://twitter.tweetdeck.com/',
+          link: 'https://tweetdeck.twitter.com/',
         },
         {
           name: 'Reddit',
