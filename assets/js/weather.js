@@ -39,6 +39,10 @@ function setPosition(position) {
         pos.coords.latitude.toFixed(3),
         pos.coords.longitude.toFixed(3)
       );
+      getWeatherForecast(
+        pos.coords.latitude.toFixed(3),
+        pos.coords.longitude.toFixed(3)
+      );
     },
     (err) => {
       console.error(err);
@@ -47,11 +51,24 @@ function setPosition(position) {
   );
 }
 
+function getWeatherForecast(latitude, longitude){
+  let api = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  fetch(api)
+    .then(function (response) {
+      let data = response.json();
+      return data;
+    })
+    .then(function (data) {
+      console.log(data);
+      weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+      weather.description = data.weather[0].description;
+      weather.iconId = data.weather[0].icon;
+    })
+}
+
 // Get the Weather data
 function getWeather(latitude, longitude) {
   let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
-
-  console.log(api);
 
   fetch(api)
     .then(function (response) {

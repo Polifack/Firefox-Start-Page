@@ -84,19 +84,19 @@ const CONFIG = {
       fourthList: [
         {
           name: 'PS4',
-          link: 'dlpsgame.com/ps4',
+          link: 'https://www.dlpsgame.com/ps4',
         },
         {
           name: 'Movies',
-          link: 'rarbg.prx.to',
+          link: 'https://rarbg.prx.to',
         },
         {
           name: 'Roms',
-          link: 'cdromance.com',
+          link: 'https://cdromance.com',
         },
         {
           name: 'Anime',
-          link: 'nyaa.si',
+          link: 'https://nyaa.si',
         }
       ],
     },
