@@ -1,8 +1,4 @@
 const CONFIG = {
-    // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
-    // ├┴┐├─┤└─┐││  └─┐
-    // └─┘┴ ┴└─┘┴└─┘└─┘
-  
     // General
     name: 'Poli',
     imageBackground: false,
@@ -84,11 +80,11 @@ const CONFIG = {
       fourthList: [
         {
           name: 'PS4',
-          link: 'https://www.dlpsgame.com/ps4',
+          link: 'https://www.dlpsgame.com/category/ps4',
         },
         {
           name: 'Movies',
-          link: 'https://rarbg.prx.to',
+          link: 'https://rarbgprx.org',
         },
         {
           name: 'Roms',

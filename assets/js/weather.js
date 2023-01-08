@@ -79,7 +79,6 @@ function getWeather(latitude, longitude) {
       let celsius = Math.floor(data.main.temp - KELVIN);
       weather.temperature.value =
         tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32;
-      weather.description = data.weather[0].description;
       weather.iconId = data.weather[0].icon;
     })
     .then(function () {
@@ -91,5 +90,4 @@ function getWeather(latitude, longitude) {
 function displayWeather() {
   iconElement.innerHTML = `<img src="assets/icons/${CONFIG.weatherIcons}/${weather.iconId}.png"/>`;
   tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}°<span class="darkfg">${tempUnit}</span>`;
-  descElement.innerHTML = weather.description;
 }

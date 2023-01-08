@@ -13,62 +13,97 @@
   </head>
 
 
-  <body class="">
-    <div class="container">
-      <!-- Clock and Greetings  -->
-
-      <div class="picBlock">
-        <!-- Display image from assets-->
-        <img class ="picture" src="assets/pic.png" alt="random" />
-        
-      </div>
-
-      <div class="timeBlock">
-        <div class="clock">
-          <div id="hour" class=""></div>
-          <div id="separator" class=""></div>
-          <div id="minutes" class=""></div>
-        </div>
-        <div id="greetings" class=""></div>
-      </div>
-
-      <!-- Date and Weather  -->
-
-      <div class="weatherBlock">
-        <div class="date">
-          <div id="month" class=""></div>
-          <div id="day" class=""></div>
-        </div>
-        <div class="weather">
-          <div class="weatherIcon">
-            <img src="assets/icons/weather/unknown.png" />
-          </div>
-          <div class="weatherValue">
-            <p class="">- °<span class="g">c</span></p>
-          </div>
-          <div class="weatherDescription">
-            <p class=""></p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card list list__1" id="list_1"></div>
-      <div class="card list list__2" id="list_2"></div>
-      <div class="card list list__3" id="list_3"></div>
-      <div class="card list list__4" id="list_4"></div>
-
-    <!-- Config  -->
-    <script src="settings.js"></script>
-
-    <!-- Scripts   -->
-    <script src="assets/js/weather.js"></script>
-    <script src="assets/js/time.js"></script>
-    <script src="assets/js/greeting.js"></script>
-    <script src="assets/js/lists.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
+  <body>
+    <div class="background">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          var move = 0
+          setInterval(function(){
+            move-=1
+            $('.background').css('background-position', move + 'px 0')
+          }, 50)
+        })
+      </script>
     </div>
+
+    <div>
+      <div class="container">
+        <!-- Clock and Greetings  -->
+
+        <div class="picBlock">
+          <!-- Display image from assets-->        
+          <img class ="picture" id="picture" src="assets/pics/eikichi-1.webp" alt="random"/>
+          
+        </div>
+
+        <div class="speechBlock">
+          <div id="speech-bubble">
+            <div id="bub-part-a"></div>
+            <div id="bub-part-b"></div>
+            <div id="bub-part-c"></div>
+            <div id="speech-txt">
+              
+              <div id="greetings"></div>
+
+            </div>
+            <div id="bub-part-c"></div>
+            <div id="bub-part-b"></div>
+            <div id="bub-part-a"></div>
+        
+            <div id="speech-arrow">
+              <div id="arrow-w"></div>
+              <div id="arrow-x"></div>
+              <div id="arrow-y"></div>
+              <div id="arrow-z"></div>
+            </div><!--end arrow-->
+        </div><!--end speech bubble-->
+        </div>
+
+        <div class="timeBlock">
+          <div class="clock">
+            <div id="hour" class=""></div>
+            <div id="separator" class=""></div>
+            <div id="minutes" class=""></div>
+          </div>
+        </div>
+
+        <!-- Date and Weather  -->
+
+        <div class="weatherBlock">
+          <div class="date">
+            <div id="month" class=""></div>
+            <div id="day" class=""></div>
+          </div>
+          <div class="weather">
+            <div class="weatherIcon">
+              <img src="assets/icons/weather/unknown.png" />
+            </div>
+            <div class="weatherValue">
+              <p class="">- °<span class="g">c</span></p>
+            </div>
+            <div class="weatherDescription">
+              <p class=""></p>
+            </div>
+          </div>
+        </div>
+        <div class="card list list__1" id="list_1"></div>
+        <div class="card list list__2" id="list_2"></div>
+        <div class="card list list__3" id="list_3"></div>
+        <div class="card list list__4" id="list_4"></div>
+
+      <!-- Config  -->
+      <script src="settings.js"></script>
+
+      <!-- Scripts   -->
+      <script src="assets/js/weather.js"></script>
+      <script src="assets/js/time.js"></script>
+      <script src="assets/js/greeting.js"></script>
+      <script src="assets/js/lists.js"></script>
+      <script src="assets/js/pic.js"></script>
+      <script>
+        lucide.createIcons();
+      </script>
+      </div>
   </body>
 </html>
